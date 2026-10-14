@@ -1,142 +1,61 @@
-\# Favicon Maker
+# Favicon Maker
 
+Native Windows executable for the [Orspex Favicon Generator](https://orpexexitus-maker.github.io/orspex-favicon-generator/).
 
+## 🚀 Download & Use
 
-A tiny native Windows tool that turns any image into a multi-resolution .ico favicon.
+**Direct download (Windows 10/11):**
 
+👉 [**favicon-maker.exe**](https://github.com/orpexexitus-maker/favicon-maker/raw/main/dist/favicon-maker.exe) (~713 KB)
 
+**How to use:**
+1. Click the download link above
+2. Save `favicon-maker.exe` anywhere (Desktop, Downloads, etc.)
+3. Double-click to run
+4. Drag an image → generate a favicon set → save as ZIP
 
-\## Download
+**No install. No signup. No internet required.**
 
+## 🌐 Also Available Online
 
+Prefer a browser? Two other versions of the same tool:
 
-\*\*Quick download (raw exe):\*\*
+| Version | URL |
+|---------|-----|
+| **Online** (browser) | https://orpexexitus-maker.github.io/orspex-favicon-generator/ |
+| **Offline HTML** | https://orpexexitus-maker.github.io/orspex-favicon-generator/offline/ |
 
-\[dist/favicon-maker.exe](dist/favicon-maker.exe) - click the link, then click the download button.
+Both are free, private, and cross-platform.
 
+## 📦 What It Generates
 
+Upload one image → get a complete favicon set:
 
-\*\*Official releases:\*\*
+- `favicon.ico` (16, 32, 48 embedded)
+- `favicon-16x16.png`
+- `favicon-32x32.png`
+- `favicon-48x48.png`
+- `apple-touch-icon.png` (180×180)
+- `android-chrome-192x192.png`
+- `android-chrome-512x512.png`
+- `site.webmanifest`
+- `README.txt`
 
-\[Releases page](../../releases) - versioned builds.
+## ✨ Features
 
+- ✅ **100% private** — runs entirely on your PC, no uploads
+- ✅ **Custom background color** — transparent or any color
+- ✅ **Center-crop** — auto-fits non-square images
+- ✅ **ZIP export** — download everything at once
+- ✅ **Works offline** — no internet required
+- ✅ **Tiny binary** — 713 KB, no runtime dependencies
+- ✅ **Free forever** — no signup, no watermark
 
+## 🛠️ Tech Stack
 
-\### Requirements
+- **Language:** Rust
+- **GUI:** Native Windows application
+- **Binary size:** 713 KB (self-contained)
+- **No dependencies:** Doesn't require .NET, Java, Python, or any runtime
 
-
-
-\- Windows 10 or Windows 11 (x64)
-
-\- No runtime, no installer, no dependencies
-
-
-
-Just download and double-click the exe.
-
-
-
-\## Features
-
-
-
-\- Loads PNG, JPG, JPEG, BMP, GIF, WebP
-
-\- Outputs a proper multi-resolution .ico (16, 32, 48, 64, 128, 256 px)
-
-\- Preserves transparency (RGBA)
-
-\- Uses Lanczos3 downscaling for clean edges
-
-\- Single \~700 KB native executable, no runtime required
-
-
-
-\## Usage
-
-
-
-1\. Run favicon-maker.exe
-
-2\. Click Browse and pick your source image
-
-3\. Choose which sizes to embed (defaults are good for web use)
-
-4\. Set the output .ico path
-
-5\. Click Generate Favicon
-
-
-
-\## Build from source
-
-
-
-Requirements:
-
-
-
-\- Rust (https://rustup.rs) - MSVC toolchain
-
-\- Visual Studio Build Tools with the "Desktop development with C++" workload
-
-
-
-&#x20;   git clone https://github.com/YOUR-USERNAME/favicon-maker.git
-
-&#x20;   cd favicon-maker
-
-&#x20;   cargo build --release
-
-
-
-The executable lands in target/release/favicon-maker.exe.
-
-
-
-To update the committed binary in dist/:
-
-
-
-&#x20;   cargo build --release
-
-&#x20;   copy target\\release\\favicon-maker.exe dist\\favicon-maker.exe
-
-&#x20;   git add dist/favicon-maker.exe
-
-&#x20;   git commit -m "Update dist binary"
-
-&#x20;   git push
-
-
-
-\## Project layout
-
-
-
-&#x20;   favicon-maker\\
-
-&#x20;     assets\\app.ico          (icon embedded in the exe)
-
-&#x20;     dist\\favicon-maker.exe  (committed build artifact)
-
-&#x20;     src\\main.rs             (application source)
-
-&#x20;     build.rs                (embeds assets\\app.ico into the exe)
-
-&#x20;     Cargo.toml
-
-&#x20;     Cargo.lock
-
-&#x20;     LICENSE
-
-&#x20;     README.md
-
-
-
-\## License
-
-
-
-MIT - see LICENSE.
-
+## 📁 Repository Structure
